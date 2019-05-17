@@ -1,0 +1,6 @@
+.todo-item {
+  & + .todo-item {
+    margin-top: 15px;
+    display: block;
+  }
+}
