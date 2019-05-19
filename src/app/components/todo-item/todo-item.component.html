@@ -1,5 +1,5 @@
 <div [ngClass]="setClasses()">
-  <input [id]="'test' + todo.id" (change)="onChange(todo)" type="checkbox" [checked]="todo.completed">
-  <label for='{{"test" + todo.id}}'>{{todo.title}}</label>
+  <input [id]="'checkbox' + todo.id" (change)="onChange(todo)" type="checkbox" [checked]="todo.completed">
+  <label [attr.for]="'checkbox' + todo.id">{{todo.title}}</label>
   <button (click)="onDelete(todo)" class="btn btn_delete">delete</button>
 </div>

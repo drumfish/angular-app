@@ -1,0 +1,25 @@
+.posts {
+  display: block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.29);
+  border-radius: 4px;
+  padding: 15px 25px 20px;
+  background-color: #f1f1f1;
+  max-width: 600px;
+  margin: 0 auto;
+
+  & + .posts {
+    margin-top: 20px;
+  }
+
+  .post_title {
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+  }
+
+  .post_body {
+    font-size: 14px;
+  }
+}

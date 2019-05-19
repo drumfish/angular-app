@@ -1,6 +1,16 @@
-.todo-item {
-  & + .todo-item {
+.todo_item {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+
+  & + .todo_item {
     margin-top: 15px;
     display: block;
   }
+}
+
+.add_todo_item {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
 }

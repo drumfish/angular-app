@@ -1,0 +1,10 @@
+<form class="add_post_form" (ngSubmit)="submitPost()">
+  <input type="text" name="title" [(ngModel)]="title" placeholder="Add title to the post">
+  <textarea name="body" [(ngModel)]="body" cols="30" rows="5" placeholder="Add body"></textarea>
+  <input type="submit" value="Add" class="btn btn_success">
+</form>
+
+<div class="posts" *ngFor="let post of posts">
+  <div class="post_title">{{post.title}}</div>
+  <div class="post_body">{{post.body}}</div>
+</div>

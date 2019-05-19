@@ -11,10 +11,13 @@
 }
 
 .btn_success {
-  background-color: green;
+  background-color: #00a400;
   color: #ffffff;
   margin-left: 10px;
-  margin-right: 11px;
+
+  &:hover {
+    background-color: #009700;
+  }
 }
 
 .add_todo_form {
